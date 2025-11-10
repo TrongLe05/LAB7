@@ -30,7 +30,7 @@ namespace LAB7
         private void btnXem_Click(object sender, EventArgs e)
         {
             // lấy chuỗi connectionstring từ app.config
-            string conn = global::LAB7.Properties.Settings.Default.QLSVConnectionString;
+            string conn = global::LAB7.Properties.Settings.Default.QLSVConnectionString1;
             // truy vấn lấy điểm các môn học của SV có mã số được chọn
             string str = string.Format("Select TenMH, Diem From KetQua,Mon where [KetQua].MaMH = [Mon].MaMH AND MaSo = {0}",cbMaSo.Text);
             SqlDataAdapter da = new SqlDataAdapter(str, conn);

@@ -31,7 +31,7 @@ namespace LAB7
 
         private void btnNhap_Click(object sender, EventArgs e)
         {
-            string connStr = global::LAB7.Properties.Settings.Default.QLSVConnectionString;
+            string connStr = global::LAB7.Properties.Settings.Default.QLSVConnectionString1;
             string str = string.Format("INSERT INTO KetQua (MaSo, MaMH, Diem) VALUES ({0}, '{1}', {2})", cbMaSo.Text, cbMaMH.Text, txtDiem.Text);
             using (SqlConnection conn = new SqlConnection(connStr))
             {

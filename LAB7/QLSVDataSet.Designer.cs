@@ -2365,7 +2365,7 @@ SELECT MaSo, MaMH, Diem FROM KetQua WHERE (MaMH = @MaMH) AND (MaSo = @MaSo)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString;
+            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2716,7 +2716,7 @@ SELECT MaSo, MaMH, Diem FROM KetQua WHERE (MaMH = @MaMH) AND (MaSo = @MaSo)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString;
+            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3069,7 +3069,7 @@ SELECT MaMH, TenMH, SoTiet FROM Mon WHERE (MaMH = @MaMH)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString;
+            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3476,7 +3476,7 @@ SELECT MaSo, HoTen, NgaySinh, GioiTinh, DiaChi, DienThoai, MaKhoa FROM SinhVien 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString;
+            this._connection.ConnectionString = global::LAB7.Properties.Settings.Default.QLSVConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

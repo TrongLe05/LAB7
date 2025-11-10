@@ -33,5 +33,16 @@ namespace LAB7.Properties {
                 return ((string)(this["QLSVConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LMT;Initial Catalog=QLSV;Integrated Security=True;TrustServerCertific" +
+            "ate=True")]
+        public string QLSVConnectionString1 {
+            get {
+                return ((string)(this["QLSVConnectionString1"]));
+            }
+        }
     }
 }
