@@ -31,5 +31,33 @@ namespace LAB7
             this.sinhVienTableAdapter.Fill(this.qLSVDataSet.SinhVien);
 
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            using (var db = new QLSVEntities())
+            {
+                SinhVien sv = new SinhVien()
+                {
+                    MaSo = int.Parse(maSoTextBox.Text),
+                    HoTen = hoTenTextBox.Text,
+                    NgaySinh = ngaySinhDateTimePicker.Value,
+                    GioiTinh = gioiTinhCheckBox.Checked,
+                    DiaChi = diaChiTextBox.Text,
+                    DienThoai = int.Parse(dienThoaiTextBox.Text),
+                    MaKhoa = maKhoaTextBox.Text
+                };
+                db.SinhVien.Add(sv);
+                db.SaveChanges();
+            }
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            using (var db = new QLSVEntities())
+            {
+                sinhVienDataGridView.DataSource = db.SinhVien.ToList(); 
+            }
+        }
     }
 }
